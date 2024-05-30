@@ -48,31 +48,31 @@ Gra w wisielca to klasyczna gra polegająca na zgadywaniu liter, które składaj
 4. Gra kończy się, gdy zgadniesz całe słowo lub stracisz wszystkie próby.
 
 ## Struktura Projektu
+
+```
 hangman/
 │
 ├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ ├── com/
-│ │ │ │ ├── example/
-│ │ │ │ │ ├── hangman/
-│ │ │ │ │ │ ├── Main.java
-│ │ │ │ │ │ ├── GameController.java
-│ │ │ │ │ │ ├── GameView.java
-│ │ │ │ │ │ ├── Word.java
-│ │ │ │ │ │ ├── WordRepository.java
-│ │ │ ├── module-info.java
-│ ├── resources/
-│ └── test/
-│ ├── java/
-│ └── resources/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── hangman/
+│   │   │               ├── Main.java
+│   │   │               ├── GameController.java
+│   │   │               ├── GameView.java
+│   │   │               ├── Word.java
+│   │   │               ├── WordRepository.java
+│   │   ├── module-info.java
+│   ├── resources/
+│   └── test/
+│       ├── java/
+│       └── resources/
 ├── .gitignore
 ├── README.md
 ├── build.gradle
 └── settings.gradle
-
-
-
+```
 
 ## Przykładowe Dane Wejściowe
 Ponieważ gra losuje słowa z predefiniowanej bazy, przykładowe dane wejściowe obejmują listę słów zawartych w `WordRepository.java`:
@@ -83,6 +83,4 @@ private List<Word> words = Arrays.asList(
     new Word("lemon"), new Word("mango"), new Word("peach"),
     new Word("plum")
 );
-
-
 
